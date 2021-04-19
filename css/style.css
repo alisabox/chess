@@ -6,7 +6,8 @@
 }
 
 .page-container {
-  width: 1440px;
+  width: 100vw;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -17,7 +18,7 @@
 }
 
 .intro__container {
-  width: 1150px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -42,6 +43,7 @@ h1 {
   line-height: 75px;
   letter-spacing: -2%;
   text-align: center;
+  word-break: normal;
 }
 
 .download {
@@ -113,6 +115,8 @@ h1 {
   display: block;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .chess h2 {
@@ -183,11 +187,11 @@ h1 {
 
 .other-variants__list {
   min-height: 310px;
-  margin: 0 76px;
+  margin: 0 76px 0 51px;
   padding: 0;
-  display: grid;
-  grid-template-columns: 384px 420px 384px;
-  column-gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   list-style: none;
 }
@@ -195,6 +199,16 @@ h1 {
 .other-variants__item {
   position: relative;
   padding-top: 168px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+.other-variants__item:nth-child(odd) {
+  width: 394px;
+}
+
+.other-variants__item:nth-child(even) {
+  width: 423px;
 }
 
 .other-variants__item h3 {
